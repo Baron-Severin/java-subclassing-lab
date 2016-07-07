@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.severinrudie.java_subclassing_lab.MainActivity"
+    android:background="@color/activityBackground">
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Eagle"
+        android:id="@+id/buttonEagle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToEagle" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Emu"
+        android:id="@+id/buttonEmu"
+        android:layout_alignTop="@+id/buttonEagle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToEmu" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Komodo Dragon"
+        android:id="@+id/buttonKomodo"
+        android:layout_below="@+id/buttonEagle"
+        android:layout_alignRight="@+id/buttonEagle"
+        android:layout_alignEnd="@+id/buttonEagle"
+        android:layout_marginTop="42dp"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToKomodo" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Anaconda"
+        android:id="@+id/buttonAnaconda"
+        android:layout_alignTop="@+id/buttonKomodo"
+        android:layout_alignLeft="@+id/buttonEmu"
+        android:layout_alignStart="@+id/buttonEmu"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToAnaconda" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        android:id="@+id/buttonHuman"
+        android:layout_below="@+id/buttonKomodo"
+        android:layout_alignRight="@+id/buttonKomodo"
+        android:layout_alignEnd="@+id/buttonKomodo"
+        android:layout_marginTop="47dp"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToHuman" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Kangaroo"
+        android:id="@+id/buttonKangaroo"
+        android:layout_alignTop="@+id/buttonHuman"
+        android:layout_alignLeft="@+id/buttonAnaconda"
+        android:layout_alignStart="@+id/buttonAnaconda"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToKangaroo" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Fox"
+        android:id="@+id/buttonFox"
+        android:layout_below="@+id/buttonHuman"
+        android:layout_marginTop="47dp"
+        android:background="@color/menuButtons"
+        android:textColor="@android:color/white"
+        android:onClick="goToFox"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
